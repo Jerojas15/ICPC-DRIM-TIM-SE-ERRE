@@ -2,7 +2,7 @@
 
 ```
 Carpeta por categoria
-L__> codigoDelProblema.cpp/py/java
+L--> codigoDelProblema.cpp/py/java
 ```
 
 ## Cronograma:
