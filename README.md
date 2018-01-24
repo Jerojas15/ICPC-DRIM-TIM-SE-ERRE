@@ -2,7 +2,7 @@
 
 ```
 Carpeta por categoria
-L--> codigoDelProblema.cpp/py/java
+L--> JUEZ_codigoDelProblema.cpp/py/java
 ```
 
 ## Cronograma:
