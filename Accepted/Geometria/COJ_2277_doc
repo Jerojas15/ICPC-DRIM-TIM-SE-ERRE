@@ -1,0 +1,4 @@
+El convex hull tiene el diamate perfecto, b inicia en la cantidad de puntos del convex hull,
+a inicia en 0
+si se encuentra una diferencia entre el convex hull y la entrada, a++ y b--.
+varias diferencias consecutivas cuentan como una sola

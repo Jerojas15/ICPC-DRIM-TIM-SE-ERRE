@@ -1,5 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 typedef complex<long> c;
 typedef vector<c> vc;
+typedef vector<int> vi;
 
 bool compare_complex(c a, c b){
 	pair<long,long> aa(real(a),imag(a));
@@ -44,3 +48,52 @@ vc convex_hull(vc points){
 	upper.resize(size);
 	return upper;
 }
+
+
+int main(void){
+	int t;
+	cin>>t;
+	while(t--){
+		int n,a,b;
+		double p,q,r,ix,iy;
+		cin>>p>>q>>n;
+	
+		vc v(n);
+
+		for(int i = 0; i < n; i++){
+			cin>>ix>>iy;
+			v[i] = c(ix,iy);
+		}
+
+		vc ch = convex_hull(v);
+
+		int i = -1;
+		while(v[++i] != ch[0]);
+			
+		rotate(v.begin(), v.begin()+i, v.end()); 
+
+		a = 0;
+		int j;
+		b = ch.size();
+		
+		for(i = 0, j = 0; i < ch.size(); i++,j++){
+			if(ch[i] != v[j]){
+				a++;
+				b--;
+				while((++j < n) && (ch[i] != v[j]));
+			}	
+		}
+		if(j < n){
+			a++;
+			b--;
+		}
+
+		r = -a*p+b*q;
+		if(r<0)cout<<"0\n";
+		else cout<<r<<'\n';;
+		
+	}
+
+	return 0;
+}
+
