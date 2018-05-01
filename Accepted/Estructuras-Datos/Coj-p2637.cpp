@@ -32,7 +32,7 @@ int main(){
 				cout << arr[b] << "\n";
 			}
 		}
-		if(t>=1)
+		if (t > 0)
 			cout << "\n";
 	}
 
