@@ -3,7 +3,7 @@ using namespace std;
 typedef pair<unsigned, unsigned> pi;
 typedef vector<unsigned> vi;
 typedef vector<pi> vpi;
-typedef vector<vi> vvpi;
+typedef vector<vpi> vvpi;
 
 vvpi graph;
 //resultados en d
