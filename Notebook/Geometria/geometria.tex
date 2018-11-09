@@ -1,0 +1,49 @@
+\input{preamble}
+\title{Notas de geometr\'ia de DRIM TIM SE-ERRE}
+\date{}
+\begin{document}
+\maketitle
+
+\section {Producto punto}
+\begin{itemize}
+\item $ A \cdot B = X_A \, X_B + Y_A \, Y_B $
+\item $A \cdot B = ||A||\, ||B||\, \cos(\theta)$
+\item Proyecci\'on de A en B (magnitud): $||A||\, \cos(\theta) \quad = \quad \frac{A \cdot B }{ ||B||} $
+\item Proyeci\'on de A en B (punto): $\frac{B}{||B||} \cdot \frac{A \cdot B }{ ||B||} $
+\item $B$ ortogonal a $A \Rightarrow A\cdot B = 0$ 
+\item $B$ en la misma direcci\'on que $A$ (en relaci\'on a la l\'inea ortogonal) $\Rightarrow A\cdot B > 0$
+\end{itemize}
+
+\section {Producto cruz (Dios)}
+\begin{itemize}
+\item $A \times B = X_A \, Y_B - Y_A \, X_B$
+\item $A \times B = 0 \Rightarrow B$ en l\'inea con $A$
+\item $A \times B > 0 \Rightarrow B$ a la izquierda de $A$
+\item $A \times B < 0 \Rightarrow B$ a la derecha de $A$
+\item $A \times B = ||A|| \, ||B|| \, \sin(\theta) = $ \'area del paralelogramo definido por $A$ y $B$
+\end{itemize}
+
+\section{L\'ineas, segmentos}
+Sea $l$ una l\'inea definida por los puntos $P$ y $Q$.
+\subsection{Con producto punto}
+\begin{itemize}
+\item $l: A \cdot B = c$
+\item $c = 0 \Rightarrow l$ pasa por el origen
+\item $l_1: A \cdot B = c \;\land\; l_2: A \cdot B = d \Rightarrow l_1$ y $l_2$ son paralelas
+\item $||B|| = 1 \Rightarrow $ distancia entre $l_1$ y $l_2$ es $|c-d|$
+\item Para obtener los valores: $$l: A\cdot B = c$$ $$B = (Q-P)i$$ $$c = P\cdot B$$ 
+\item $l_1: A\cdot b = c \; \land \; l_2: A\cdot D = e \Rightarrow$ la intersecci\'on $A$ es dada por:
+	$$d = B\times D$$ $$X_A = \frac{cY_D-eY_B}{d}$$ $$Y_A = \frac{eX_B-cX_D}{d}$$
+	Si $d = 0$ las l\'ineas son paralelas y no hay soluci\'on \'unica. 
+\end{itemize}
+
+\subsection{Por puntos que salen de $P$ hacia $Q$}
+\begin{itemize}
+\item $l:P+t(Q-P)$
+\item $A = P+t(Q-P) \;\land\; 0 \leq t \leq 1 \Rightarrow$ A est\'a en el segmento $\overline{PQ}$.
+\item $l_1: A+t(B-A) \;\land\; l_2:C+s(D-C)$ las soluciones $t$ y $s$ son dadas por:
+	$$d = \overrightarrow{CD}\times\overrightarrow{AB} $$ $$t = \frac{\overrightarrow{CD}\times\overrightarrow{AC}}{d}$$
+	$$s = \frac{\overrightarrow{AB}\times\overrightarrow{AC}}{d}$$
+\end{itemize}
+
+\end{document}
